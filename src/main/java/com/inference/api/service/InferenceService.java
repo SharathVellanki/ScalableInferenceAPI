@@ -8,7 +8,8 @@ import org.springframework.stereotype.Service;
 public class InferenceService {
 
     @Retryable(maxAttempts = 3)
-    public InferenceResponse runInference(String input) {
+    public InferenceResponse runInference(String input) 
+    {
         String threadName = Thread.currentThread().getName();
 
         // Simulate a slow or failing service (can be replaced by real ML logic)

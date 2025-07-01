@@ -1,1 +1,6 @@
+com\inference\api\controller\InferenceController.class
+com\inference\api\service\InferenceService.class
+com\inference\api\model\InferenceResponse.class
 com\inference\api\ScalableInferenceApiApplication.class
+com\inference\api\model\InferenceRequest.class
+com\inference\api\config\RetryConfig.class
