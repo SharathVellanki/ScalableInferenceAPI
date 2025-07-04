@@ -13,9 +13,17 @@ public class InferenceController
 
     @Autowired
     private InferenceService inferenceService;
+    
 
     @PostMapping("/infer")
     public InferenceResponse infer(@RequestBody InferenceRequest request) {
         return inferenceService.runInference(request.getInput());
     }
+
+
+    @GetMapping("/infer")
+    public InferenceResponse infer(@RequestParam String input) {
+        return inferenceService.runInference(input);
+    }
+
 }
