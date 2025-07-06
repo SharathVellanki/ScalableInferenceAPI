@@ -1,6 +1,7 @@
-*.class 
-.vscode/ 
-*.log 
-*.tmp 
-.DS_Store 
-Thumbs.db 
+/target/
+/*.log
+*.class
+*.jar
+.idea/
+/.vscode/
+docker-compose.override.yml
